@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="log-window">
+        <div class="welcome-back">
+          <div id="hello">Create a new account</div>
+          <div class="img-prew">
+            <img src="" alt="" class="img" id="img" />
+            <span class="profile-picture" id="containerText"
+              >Profile Picture</span
+            >
+          </div>
+          <input
+            type="file"
+            class="file"
+            id="inpFile"
+            accept=".jpg, .jpeg, .png"
+          />
+        </div>
+        <div class="controls">
+          <div class="fields">
+            <div class="field">
+              Email<br />
+              <input type="text" class="input" id="emailinput" />
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              User Name<br />
+              <input type="text" class="input" id="user" />
+            </div>
+            <div class="field">
+              Password<br />
+              <input type="password" class="input" id="passinput" />
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              Confirm password<br />
+              <input type="password" class="input" id="confirmed" />
+              <span class="error"></span>
+            </div>
+          </div>
+          <button class="main-button" id="continue">Continue</button>
+          <div class="register">
+            <a href="index.html">Got an account?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/register.js"></script>
+  </body>
+</html>

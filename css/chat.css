@@ -1,0 +1,455 @@
+body {
+  font-family: 'Baloo Paaji 2';
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: #40444b;
+}
+::-webkit-scrollbar-thumb {
+  background: #202225;
+  border-radius: 4px;
+}
+.main-container {
+  background: #202225;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.left-container {
+  border: 1px;
+  border-radius: 5px;
+  background: #202225;
+  width: 70px;
+  height: 100%;
+}
+.button {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  margin: 10px auto;
+  border-radius: 50%;
+  transition: 0.2s;
+  overflow: hidden;
+}
+.button:hover {
+  border-radius: 30%;
+}
+.button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.tool {
+  background: #36393f;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  margin: 10px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.tool img {
+  width: 60%;
+  height: 60%;
+  border-radius: 0;
+  padding: 9px;
+}
+.tool:hover {
+  border-radius: 30%;
+  background-color: #43b581;
+}
+.home {
+  background: #7289da;
+  border-radius: 30%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.home img {
+  margin: 6px auto;
+}
+.rectangle {
+  width: 30px;
+  height: 2px;
+  background: #2d2f32;
+  margin: 0px auto;
+}
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100%;
+  background: #2f3136;
+  border-radius: 10px;
+  position: relative;
+}
+.input-form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 300px;
+}
+input {
+  height: 25px;
+  width: 180px;
+  background: #202225;
+  padding-left: 25px;
+  border-radius: 5px;
+  border: none;
+  color: #727661;
+}
+.mid {
+  padding: 0 18px;
+  height: 50px;
+  font-size: 1.4em;
+  line-height: 50px;
+  position: relative;
+  background: #2f3136;
+  color: #8e9297;
+  cursor: pointer;
+}
+.fa-user-friends:before {
+  padding-right: 10px;
+  color: rgb(220, 221, 222);
+}
+.fa-truck-monster:before {
+  padding-right: 10px;
+  color: rgb(220, 221, 222);
+}
+.mid:hover {
+  background: #393c43;
+}
+.rectangle1 {
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  margin: 2px auto;
+}
+.messege {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+.private {
+  width: 100%;
+  height: 25px;
+  font-size: 0.8em;
+  text-align: left;
+  text-transform: uppercase;
+  background: #2f3136;
+  color: #8e9297;
+}
+.private:hover {
+  color: white;
+}
+.plus {
+  color: #8e9297;
+  text-align: center;
+}
+.plus:hover {
+  color: white;
+}
+.fa-plus:before {
+  padding-left: 35px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 100%;
+  background: #2f3136;
+  font-size: 0.9em;
+  margin: 15px auto;
+  padding-left: 8px;
+}
+.user {
+  width: 95%;
+  height: 35px;
+  background: #2f3136;
+  font-size: 1.2em;
+  line-height: 50px;
+  position: relative;
+  text-align: left;
+  text-indent: 3px;
+  color: #8e9297;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.user img {
+  margin-right: 10px;
+}
+.user:hover {
+  width: 95%;
+  height: 35px;
+  background: #393c43;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.profile {
+  display: flex;
+  width: 100%;
+  height: 52px;
+  background: #292b2f;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.profile-column {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.profile img {
+  margin-right: 10px;
+}
+.profile-column:last-child {
+  justify-content: flex-end;
+}
+.profile .fas {
+  font-size: 1.4em;
+  vertical-align: middle;
+  color: rgb(220, 221, 222);
+}
+.profile .control {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 32px;
+}
+.control:hover {
+  background: #35383e;
+}
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #36393f;
+}
+.upper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 49px;
+  display: flex;
+  background: #36393f;
+}
+.upper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 49px;
+  background: #000000;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.rectangle2 {
+  width: 100%;
+  height: 2px;
+  background: #222527;
+}
+.nickname {
+  width: 160px;
+  height: 100%;
+  background: #36393f;
+  align-items: center;
+  font-size: 1.2em;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 10px;
+  text-indent: 5px;
+  font-weight: bold;
+  color: rgb(220, 221, 222);
+  cursor: pointer;
+}
+.rectvert {
+  width: 1px;
+  height: 29px;
+  margin-top: 10px;
+  background: rgb(82, 81, 81);
+  margin-left: 15px;
+}
+.fa-dot-circle {
+  font-size: 0.7em;
+}
+.call-tool {
+  width: 100%;
+  height: 100%;
+  background: #36393f;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.call .fas {
+  vertical-align: middle;
+  padding: 15px 10px;
+  color: #8e9297;
+}
+.call .fas:hover {
+  color: white;
+  cursor: pointer;
+}
+.searching {
+  width: 230px;
+  height: 100%;
+  background: #36393f;
+  display: flex;
+  flex-direction: row;
+}
+.help {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 100%;
+  background: #36393f;
+}
+.half {
+  width: 100%;
+  height: 100%;
+  background: #36393f;
+}
+.half .fas {
+  vertical-align: middle;
+  padding: 15px 10px;
+  color: #8e9297;
+  text-indent: 2px;
+}
+.half .fas:hover {
+  color: white;
+  cursor: pointer;
+}
+.dialog {
+  overflow: auto;
+  width: 100%;
+  height: calc(100% - 120px);
+  padding: 0 16px;
+  background: #36393f;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.lower {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  max-height: 100px;
+}
+button {
+  background: #40444b;
+  width: 50px;
+  height: 50px;
+  border-color: #40444b;
+  border-width: 0;
+  font-size: 1.3em;
+  color: #8e9297;
+}
+.lower :hover {
+  color: white;
+  cursor: pointer;
+}
+.type {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding-top: 6px;
+}
+.lower form {
+  display: flex;
+  width: 100%;
+}
+.lower .message-input {
+  background: #40444b;
+  overflow: auto;
+  outline: 0;
+  border-width: 0;
+  border-left: 1px solid #36393f;
+  max-height: 100px;
+  display: inline-block;
+  min-height: 50px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  color: white;
+}
+.chat-ctrls {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: #40444b;
+  border-radius: 10px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  height: 50px;
+  background: #40444b;
+}
+.icons .fas {
+  vertical-align: middle;
+  padding: 15px 10px;
+  color: #8e9297;
+  text-indent: 2px;
+}
+.icons .fas:hover {
+  color: white;
+  cursor: pointer;
+}
+.messages-container .username,
+.messages-container .message {
+  color: white;
+}
+.messages-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+.message-container .avatar {
+  width: 35px;
+}
+.messages-container .text-col {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.messages-container .text-col .username {
+  font-weight: bold;
+  cursor: pointer;
+}
+.messages-container .text-col .username:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "tutorial discord-like application",
+  "main": "index.html",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edik123123/discord.git"
+  },
+  "keywords": [
+    "discord",
+    "html",
+    "js",
+    "learning"
+  ],
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edik123123/discord/issues"
+  },
+  "homepage": "https://github.com/Edik123123/discord#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1"
+  }
+}

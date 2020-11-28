@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/modalBuilder.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="log-window">
+        <div class="welcome-back">
+          <div id="hello">Welcome back!</div>
+          <div id="message">We're so excited to see you again!</div>
+        </div>
+        <div class="controls">
+          <div class="fields">
+            <div class="field">
+              Email<br />
+              <input type="email" class="input" id="emailinput" />
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              Password<br />
+              <input type="password" class="input" id="passinput" />
+              <span class="error"></span>
+            </div>
+          </div>
+          <button id="logbtn" class="main-button">Login</button>
+          <div class="register">
+            Need an account? <a href="register.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="errorModal"></div>
+    <script type="module" src="../js/sign-in.js"></script>
+  </body>
+</html>

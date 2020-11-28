@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/chat.css" />
+    <title>Task2</title>
+    <script src="./js/faker.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <div class="home">
+          <img src="https://img.icons8.com/carbon-copy/2x/discord-logo.png" />
+        </div>
+        <div class="rectangle"></div>
+        <div class="button btn-u1">
+          <img
+            src="https://i.pinimg.com/originals/eb/c9/48/ebc948590a6f35de3b68da34e899749c.jpg"
+          />
+        </div>
+        <div class="button btn-u2">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8UN6f0Y0Z-ziEr64_lg4KVa0KfhRyeeYNr0ZDp0MLNYJ4VR4Z&usqp=CAU"
+          />
+        </div>
+        <div class="button btn-u3">
+          <img
+            src="https://pbs.twimg.com/profile_images/469189925712433152/i7DBDxcI.jpeg"
+          />
+        </div>
+        <div class="tool add">
+          <img
+            src="http://www.defaulticon.com/images/icons32x32/add.png?itok=sIL2bSuC"
+          />
+        </div>
+        <div class="tool search">
+          <img src="https://image.flaticon.com/icons/svg/751/751463.svg" />
+        </div>
+        <div class="rectangle"></div>
+        <div class="tool download">
+          <img
+            src="http://www.defaulticon.com/images/icons32x32/download.png?itok=Gw5y2FEb"
+          />
+        </div>
+      </div>
+      <div class="middle-container">
+        <div class="container">
+          <form class="input-form">
+            <input type="text" placeholder="Найти или начать беседу" />
+          </form>
+        </div>
+        <div class="rectangle1"></div>
+        <div class="mid btn-friends">
+          <i class="fas fa-user-friends"></i> Друзья
+        </div>
+        <div class="mid btn-nitro">
+          <i class="fas fa-truck-monster"></i> Nitro
+        </div>
+        <div class="messege">
+          <div class="private">личные сообщения</div>
+          <div class="plus"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="list" id="user-container"></div>
+        <div class="profile">
+          <div class="profile-column">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Purple_Haze_%28Cannabis%29.jpg/300px-Purple_Haze_%28Cannabis%29.jpg"
+            /><span>Purple_Haze</span>
+          </div>
+          <div class="profile-column">
+            <div class="control"><i class="fas fa-microphone"></i></div>
+            <div class="control"><i class="fas fa-headphones"></i></div>
+            <div class="control"><i class="fas fa-cog"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="upper">
+          <div class="nickname">
+            <span
+              >@ VeeShort
+              <i class="far fa-dot-circle"></i>
+            </span>
+          </div>
+          <div class="rectvert"></div>
+          <div class="call-tool">
+            <div class="call"><i class="fas fa-phone-alt"></i></div>
+            <div class="call"><i class="fas fa-video"></i></div>
+            <div class="call"><i class="fas fa-thumbtack"></i></div>
+            <div class="call"><i class="fas fa-user-plus"></i></div>
+            <div class="searching">
+              <form class="input-form">
+                <input type="text" placeholder="Искать" />
+              </form>
+            </div>
+            <div class="help">
+              <div class="half"><i class="fas fa-at"></i></div>
+              <div class="half"><i class="fas fa-question-circle"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="dialog" id="chat"></div>
+        <div class="lower">
+          <div class="chat-ctrls">
+            <button type="submit"><i class="fas fa-plus-circle"></i></button>
+            <div class="message-input" contenteditable="true"></div>
+            <div class="icons">
+              <i class="fas fa-gift"></i>
+              <i class="fas fa-road"></i>
+              <i class="fas fa-poo"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/messageParser.js"></script>
+  <script type="module" src="./js/users.js"></script>
+</html>
